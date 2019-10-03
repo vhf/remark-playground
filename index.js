@@ -1,0 +1,15 @@
+const vfile = require('to-vfile')
+const report = require('vfile-reporter')
+const unified = require('unified')
+const markdown = require('remark-parse')
+const remark2rehype = require('remark-rehype')
+const html = require('rehype-stringify')
+
+unified()
+  .use(markdown)
+  .use(remark2rehype)
+  .use(html)
+  .process(vfile.readSync('example.md'), function(err, file) {
+    console.error(report(err || file))
+    console.log(String(file))
+  })

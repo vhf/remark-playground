@@ -1,0 +1,20 @@
+{
+  "name": "remark-playground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "rehype-document": "^3.0.1",
+    "rehype-stringify": "^6.0.0",
+    "remark-parse": "^7.0.1",
+    "remark-rehype": "^5.0.0",
+    "to-vfile": "^6.0.0",
+    "unified": "^8.4.1",
+    "vfile-reporter": "^6.0.0"
+  }
+}
